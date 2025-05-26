@@ -17,4 +17,3 @@ The Vehicle Rental System. It simulates a basic rental service where users can r
 
 - Java
 - OOP concepts
-- *(Optional)* File I/O for future data persistence
