@@ -17,3 +17,14 @@ The Vehicle Rental System. It simulates a basic rental service where users can r
 
 - Java
 - OOP concepts
+
+
+## 🗂️ Purpose of Each Folder
+
+| Folder      | Purpose                                                            |
+|-------------|--------------------------------------------------------------------|
+| `ui/`       | All Swing GUI components and user-facing windows                   |
+| `models/`   | All data model classes representing vehicles, customers, etc.     |
+| `system/`   | Contains backend logic — rental management, data storage, etc.     |
+| `.gitignore`| Prevents unnecessary files (like `.class`, `bin/`, `.idea/`) from upload |
+| `README.md` | GitHub project info, setup guide, usage instructions               |
