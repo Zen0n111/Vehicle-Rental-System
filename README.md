@@ -1,101 +1,89 @@
-# Vehicle-Rental-System
-The Vehicle Rental System. It simulates a basic rental service where users can rent, return, and view vehicles such as cars, motorcycles, and trucks.
+# 🚗 Vehicle Rental System
+
+A simple GUI-based Java application to manage a vehicle rental system using OOP concepts. It allows users to rent and return vehicles, view available vehicles, and track rentals through a unique rental ID.
 
 ---
 
-## 🧩 Features
+## 📌 Features
 
-- Add and manage different types of vehicles
-- Create and manage customer profiles
-- Rent and return vehicles
-- Track vehicle availability
-- Console-based interaction with organized class structure
-
----
-
-## 🔧 Technologies Used
-
-- Java
-- OOP concepts
-
-
-## 🗂️ Purpose of Each Folder
-
-| Folder      | Purpose                                                            |
-|-------------|--------------------------------------------------------------------|
-| `ui/`       | All Swing GUI components and user-facing windows                   |
-| `models/`   | All data model classes representing vehicles, customers, etc.     |
-| `system/`   | Contains backend logic — rental management, data storage, etc.     |
-| `.gitignore`| Prevents unnecessary files (like `.class`, `bin/`, `.idea/`) from upload |
-| `README.md` | GitHub project info, setup guide, usage instructions               |
-
-
-
-
-````markdown
-## 🚀 How to Clone and Run This Project in VS Code
-
-Follow these steps to clone the Vehicle Rental System and run it using Visual Studio Code.
+- Rent vehicles (Car / Motorcycle)
+- Return rented vehicles using Rental ID
+- View available vehicles
+- Unique rental ID generation (e.g., RC5, RM3)
+- Basic input validation and error handling
+- GUI with colorful modern buttons and font styling
 
 ---
 
-### 📥 1. Clone the Repository
+## 🧱 Technologies Used
 
-Open your terminal (or Git Bash), then run:
-
-```bash
-git clone https://github.com/Zen0n111/vehicle-rental-system.git
-````
-
->
+- Java (JDK 8 or higher)
+- Swing for GUI
+- OOP Concepts (Encapsulation, Inheritance, Composition)
+- IntelliJ
 
 ---
 
-### 📂 2. Navigate into the Project Folder
+## 🗂️ Project Structure
 
-```bash
-cd vehicle-rental-system
-```
+VehicleRentalSystem/
+│
+├── models/ # Vehicle, Car, Motorcycle, Customer classes
+├── system/ # RentalSystem, DataStore classes
+├── ui/ # GUI interfaces (MainMenuUI, RentalFormUI, ReturnFormUI, UIDesign )
+└── VehicleRentalSystem.java # Entry point of the application
 
----
-
-### 💻 3. Open the Project in VS Code
-
-If you have VS Code installed and added to PATH, run:
-
-```bash
-code .
-```
-
-This will open the whole project in VS Code.
 
 ---
 
-### ☕ 4. Make Sure Java is Installed
+## 🚀 How to Run
 
-Ensure that you have Java JDK installed and set up. You can verify it by running:
-
-```bash
-java -version
-```
-
-and
-
-```bash
-javac -version
-```
+1. Clone the repository or download the ZIP.
+2. Open the project in your preferred Java IDE.
+3. Compile the entire project.
+4. Run `VehicleRentalSystem.java` to launch the application.
 
 ---
 
-### ▶️ 5. Run the Program
+## 🎮 Usage
 
-1. Open the `Main.java` file (located in `ui/` or root, depending on your structure).
-2. Click the **Run** ▶️ button at the top right, or right-click and select **Run Java**.
-3. If you’re using Swing, the UI window should appear.
+### Rent a Vehicle:
+- Click on `Rent Vehicle`
+- Select a vehicle
+- Enter your **Name** and **Contact Number**
+- You’ll get a unique rental ID like `RC3`
+
+### Return a Vehicle:
+- Click on `Return Vehicle`
+- Enter your **Rental ID** (e.g., `RM5`)
+- Vehicle will be returned and added back to availability
 
 ---
 
-### ✅ You're All Set!
+## Validation
 
-You’re now ready to build and test the Vehicle Rental System project in VS Code. 🚗💻
+- Contact number must be numeric and 10 digits
+- Name field cannot be empty
+- Rental ID format is validated during return
+
+---
+
+## 📌 Notes
+
+- No database integration; data is stored in memory using ArrayLists.
+- Data is reset every time the application restarts.
+- You can add more sample vehicles in `DataStore` for testing.
+
+---
+
+## 📧 Contact
+
+For improvements or questions, feel free to reach out!
+
+- gptdevansh@gmail.com
+
+- https://www.linkedin.com/in/gptdevansh
+
+---
+
 
